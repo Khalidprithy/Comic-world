@@ -18,6 +18,7 @@ const Shop = () => {
     const handleAddToCart = (books) => {
         let newCart = [...cart, books];
         setCart(newCart);
+        // window.scrollTo(0, 200);
     }
 
 
@@ -41,6 +42,10 @@ const Shop = () => {
                         item={item}
                     ></Cart>)
                 }
+                <div className='button-container'>
+                    <button className='btn'>Pick One</button>
+                    <button className='btn'>Clear Cart</button>
+                </div>
 
             </div>
         </div>

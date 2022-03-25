@@ -1,3 +1,21 @@
-.cart{
-    background-color: green;
+.cart-info{
+    position: static;
+    top: 0;
+}
+
+.item{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:0.5px solid rgb(58, 57, 57);
+    border-radius: 8px;
+    background-color:#D6DBDF;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+
+.item:hover{
+    box-shadow: 3px 5px 20px;
 }

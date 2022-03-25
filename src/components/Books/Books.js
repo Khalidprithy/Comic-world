@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
-import Cart from '../Cart/Cart';
 import './Book.css'
 
 const Books = ({ book, handleAddToCart }) => {
