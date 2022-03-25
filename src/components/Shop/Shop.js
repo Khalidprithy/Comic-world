@@ -39,8 +39,8 @@ const Shop = () => {
         setCart(emptyCart);
     }
 
-    const pickRandom = (randoms) => {
-        console.log(randoms.length)
+    const pickRandom = (cart) => {
+        console.log(cart.map(random => console.log(random)))
     }
 
     const removeItem = (items) => {

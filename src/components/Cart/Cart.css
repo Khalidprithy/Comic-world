@@ -16,6 +16,21 @@
     padding: 0 5px;
 }
 
+
 .item:hover{
     box-shadow: 3px 5px 20px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .item h4{
+        font-size: 10px;
+    }
+    
+    .item p{
+        font-size: 10px;
+    }
+
+}
+
+
+

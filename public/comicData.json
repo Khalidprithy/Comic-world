@@ -8,55 +8,67 @@
     {
         "id": "623dd3528e3ac4c975abf7f9",
         "price": "998.28",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Silvia Grimes"
+        "image": "https://i.pinimg.com/736x/e5/09/fd/e509fd2f9771230fb8e82d1ae3b10d4d.jpg",
+        "name": "Justice League"
     },
     {
         "id": "623dd3520434edec6bf7e46d",
         "price": "183.80",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Minerva Barlow"
+        "image": "https://media.comicbook.com/wp-content/uploads/2013/02/detective-comics-18.jpg",
+        "name": "Batman Detective"
     },
     {
         "id": "623dd35258ff02fea4f5e364",
         "price": "357.96",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Lidia Cunningham"
+        "image": "https://cdn.nexternal.com/dreamland/images/batman_robin_2_var_NM.jpg",
+        "name": "Batman Robin"
     },
     {
         "id": "623dd352adff53c9761183d0",
         "price": "741.78",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Francis Jackson"
+        "image": "https://i.annihil.us/u/prod/marvel/i/mg/6/10/5d54221d1cb96/clean.jpg",
+        "name": "Iron man"
     },
     {
         "id": "623dd352235dda28eae7c53c",
         "price": "729.08",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Victoria Nunez"
+        "image": "https://www.dccomics.com/sites/default/files/imce/2020/09-SEP/Batman-Three-Jokers_Cv2_Fabok_5f6d4ede6a21f5.56710190.jpg",
+        "name": "Three Jokes"
     },
     {
         "id": "623dd35282b6e6a65fb5cff8",
         "price": "947.44",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Gay Mills"
+        "image": "https://i.annihil.us/u/prod/marvel/i/mg/9/60/5f510d7db4f72/clean.jpg",
+        "name": "The Black Cat"
     },
     {
         "id": "623dd3520c1545182333fcd9",
         "price": "112.09",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Simpson Summers"
+        "image": "https://comicbookroundup.com/img/covers/x/x-force-(2019)/9.jpg",
+        "name": "X-Force"
     },
     {
         "id": "623dd3528c3d1c52f5051d3c",
         "price": "893.71",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Jacquelyn Wheeler"
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81CvzUaNCKL.jpg",
+        "name": "Wonder Woman"
     },
     {
         "id": "623dd3521f02d5745b34b4d6",
         "price": "486.88",
-        "image": "https://media.wired.com/photos/59271b1b7034dc5f91beda79/master/w_1280,h_1962,c_limit/SupermanBatman78.jpg",
-        "name": "Romero Park"
+        "image": "https://i.pinimg.com/736x/33/0e/c9/330ec9d6adf1ba6ffec5bc9bdf7b35f9.jpg",
+        "name": "Superman ll"
+    },
+    {
+        "id": "623dd3521f02d5745b34b486",
+        "price": "486.88",
+        "image": "https://i.annihil.us/u/prod/marvel/i/mg/e/90/611bd32e9baca/clean.jpg",
+        "name": "Moon Knight"
+    },
+    {
+        "id": "623dd3521f02d5745b74b4d6",
+        "price": "486.88",
+        "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/nicholas-schumaker_spidermanmilesmorales_altcover_1_10052020.jpg",
+        "name": "Miles Morales"
     }
 ]

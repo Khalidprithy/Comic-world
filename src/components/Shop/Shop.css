@@ -45,7 +45,7 @@
     }
     
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
     .shop{
         grid-template-columns: 1fr;
         order: 1;
