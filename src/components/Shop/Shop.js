@@ -6,13 +6,19 @@ import './Shop.css'
 
 const Shop = () => {
     const [books, setBooks] = useState([]);
-    console.log(books);
+    const [cart, setCart] = useState([]);
+    // console.log(books);
 
     useEffect(() => {
         fetch('comicData.json')
             .then(res => res.json())
             .then(data => setBooks(data))
-    }, [])
+    }, []);
+
+    const handleAddToCart = (books) => {
+        let newCart = [...cart, books];
+        setCart(newCart);
+    }
 
 
     return (
@@ -22,12 +28,20 @@ const Shop = () => {
                     books.map(book => <Books
                         key={book.id}
                         book={book}
+                        handleAddToCart={handleAddToCart}
                     ></Books>)
                 }
 
             </div>
             <div className='cart'>
-                <Cart></Cart>
+                <h1>Selected Book: {cart.length}</h1>
+                {
+                    cart.map(item => <Cart
+                        key={item.id}
+                        item={item}
+                    ></Cart>)
+                }
+
             </div>
         </div>
     );
