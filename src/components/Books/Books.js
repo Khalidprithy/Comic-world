@@ -1,10 +1,17 @@
 import React from 'react';
 import './Book.css'
 
-const Books = () => {
+const Books = ({ book }) => {
+    const { image, name, price } = book;
+
+
     return (
         <div className='book'>
-            <h1>Book</h1>
+            <img src={image} alt="" />
+            <div className='book-info'>
+                <h4>{name}</h4>
+                <p>Price: ${price}</p>
+            </div>
         </div>
     );
 };
