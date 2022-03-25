@@ -1,7 +1,8 @@
 import React from 'react';
-import './Shop.css'
 import Books from '../Books/Books';
 import Cart from '../Cart/Cart';
+import './Shop.css'
+
 
 const Shop = () => {
     return (
