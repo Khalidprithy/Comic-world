@@ -5,8 +5,8 @@ import { GiSpiderMask } from 'react-icons/gi';
 
 
 
-const Cart = ({ item }) => {
-    console.log(item);
+const Cart = ({ item, removeItem }) => {
+    console.log(removeItem);
     const { name, price } = item;
     return (
         <div className='cart-info'>
@@ -14,7 +14,7 @@ const Cart = ({ item }) => {
                 <GiSpiderMask></GiSpiderMask>
                 <h4>{name}</h4>
                 <p> ${price}</p>
-                <MdDeleteForever></MdDeleteForever>
+                <MdDeleteForever onClick={() => removeItem(item)}></MdDeleteForever>
             </div>
         </div>
     );
