@@ -3,7 +3,6 @@ import Books from '../Books/Books';
 import Cart from '../Cart/Cart';
 import './Shop.css'
 
-
 const Shop = () => {
     const [books, setBooks] = useState([]);
     const [cart, setCart] = useState([]);
@@ -22,7 +21,7 @@ const Shop = () => {
             return;
         }
         else if (!limit) {
-            alert('Can not select more')
+            alert('Can not select more then 4')
             return;
         }
         else {
