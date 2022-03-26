@@ -7,8 +7,6 @@ import './Shop.css'
 const Shop = () => {
     const [books, setBooks] = useState([]);
     const [cart, setCart] = useState([]);
-    const [random, setRandom] = useState([])
-    // console.log(books);
 
     useEffect(() => {
         fetch('comicData.json')
@@ -31,7 +29,6 @@ const Shop = () => {
             let newCart = [...cart, books];
             setCart(newCart);
         }
-        // window.scrollTo(0, 200);
     }
 
     const handleClearCart = () => {
@@ -40,13 +37,16 @@ const Shop = () => {
     }
 
     const pickRandom = (cart) => {
-        console.log(cart.map(random => console.log(random)))
+        let newCart = []
+        const random = (Math.floor(Math.random() * cart.length));
+        const randomItem = (cart[random]);
+        newCart.push(randomItem)
+        setCart(newCart)
     }
 
     const removeItem = (items) => {
         setCart(cart.filter(item => item !== items))
     }
-
 
     return (
         <div className='shop'>
@@ -70,7 +70,7 @@ const Shop = () => {
                     ></Cart>)
                 }
                 <div className='button-container'>
-                    <button onClick={pickRandom} className='btn'>Pick One</button>
+                    <button onClick={() => pickRandom(cart)} className='btn'>Pick One</button>
                     <button onClick={handleClearCart} className='btn'>Clear Cart</button>
                 </div>
 
