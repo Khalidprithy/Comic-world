@@ -4,7 +4,6 @@ import { MdDeleteForever } from 'react-icons/md';
 import { GiSpiderMask } from 'react-icons/gi';
 
 const Cart = ({ item, removeItem }) => {
-    console.log(removeItem);
     const { name, price } = item;
     return (
         <div className='cart-info'>
