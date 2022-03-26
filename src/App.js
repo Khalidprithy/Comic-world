@@ -8,7 +8,6 @@ function App() {
       <Header></Header>
       <Shop></Shop>
 
-
       <div >
         <div className='questions'>
           <h4>How React works?</h4>
@@ -19,7 +18,6 @@ function App() {
           </h4>
           <p>useState is a React hook that declares a state variable similar to this.that in a class. We use a [] on the left and two properties inside [] and useState on the right side or = to declare a useState hook. The first property is the current state and the second one is a function to update that state.  It can keep a number or a string. So when a user interacts or the server changes the state value it will call the state function and update the current state. We can use as many useState hooks as necessary. It can only update the value inside that component where it's declared. </p>
         </div>
-
       </div>
     </div>
   );

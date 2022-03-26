@@ -7,7 +7,7 @@ const Header = () => {
             <div className='header-info'>
                 <img src="Comic-World-logo1.png" alt="" />
             </div>
-            <p>Your Favourite website for Comic book</p>
+            <p>Your favorite website for Comic book</p>
         </div>
 
     );
