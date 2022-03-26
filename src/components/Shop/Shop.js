@@ -37,11 +37,18 @@ const Shop = () => {
     }
 
     const pickRandom = (cart) => {
-        let newCart = []
-        const random = (Math.floor(Math.random() * cart.length));
-        const randomItem = (cart[random]);
-        newCart.push(randomItem)
-        setCart(newCart)
+        if (cart.length < 1) {
+            alert('No item on the cart')
+            return;
+        }
+        else {
+
+            let newCart = []
+            const random = (Math.floor(Math.random() * cart.length));
+            const randomItem = (cart[random]);
+            newCart.push(randomItem)
+            setCart(newCart)
+        }
     }
 
     const removeItem = (items) => {
