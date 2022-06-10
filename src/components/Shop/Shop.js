@@ -21,7 +21,7 @@ const Shop = () => {
             return;
         }
         else if (!limit) {
-            alert('Can not select more then 4')
+            alert('Can not select more then 41')
             return;
         }
         else {
