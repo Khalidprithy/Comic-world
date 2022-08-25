@@ -9,7 +9,7 @@ const Cart = ({ item, removeItem }) => {
         <div className='cart-info'>
             <div className='item'>
                 <GiSpiderMask></GiSpiderMask>
-                <h4>{name}</h4>
+                <h4 className='comic-name'>{name}</h4>
                 <p> ${price}</p>
                 <MdDeleteForever onClick={() => removeItem(item)}></MdDeleteForever>
             </div>

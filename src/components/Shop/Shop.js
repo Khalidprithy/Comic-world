@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Books from '../Books/Books';
 import Cart from '../Cart/Cart';
 import './Shop.css'
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Shop = () => {
     const [books, setBooks] = useState([]);
@@ -17,11 +19,11 @@ const Shop = () => {
         const limit = (cart.length <= 3);
         const exist = cart.find(item => item.id === books.id);
         if (exist) {
-            alert('Already Selected')
+            toast.error('Item already exits');
             return;
         }
         else if (!limit) {
-            alert('Can not select more then 41')
+            toast.error('Can not select more then 4')
             return;
         }
         else {
@@ -31,27 +33,35 @@ const Shop = () => {
     }
 
     const handleClearCart = () => {
-        let emptyCart = [];
-        setCart(emptyCart);
+        if (cart.length < 1) {
+            toast.error('No item on the cart')
+            return;
+        }
+        else {
+            let emptyCart = [];
+            setCart(emptyCart);
+            toast.success('Cart cleared')
+        }
     }
 
     const pickRandom = (cart) => {
         if (cart.length < 1) {
-            alert('No item on the cart')
+            toast.error('No item on the cart')
             return;
         }
         else {
-
             let newCart = []
             const random = (Math.floor(Math.random() * cart.length));
             const randomItem = (cart[random]);
             newCart.push(randomItem)
             setCart(newCart)
+            toast.success('Randomly selected one item')
         }
     }
 
     const removeItem = (items) => {
         setCart(cart.filter(item => item !== items))
+        toast.success('Item deleted successfully')
     }
 
     return (
@@ -79,8 +89,8 @@ const Shop = () => {
                     <button onClick={() => pickRandom(cart)} className='btn'>Pick One</button>
                     <button onClick={handleClearCart} className='btn'>Clear Cart</button>
                 </div>
-
             </div>
+            <Toaster></Toaster>
         </div>
     );
 };

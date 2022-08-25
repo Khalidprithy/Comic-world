@@ -39,7 +39,7 @@
     background-color: #EC7063;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 968px) {
     .books{
         grid-template-columns: repeat(2, 1fr);
     }
