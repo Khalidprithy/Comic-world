@@ -50,6 +50,10 @@ const Shop = () => {
             toast.error('No item on the cart')
             return;
         }
+        if (cart.length === 1) {
+            toast.error('Select more items')
+            return;
+        }
         else {
             let newCart = []
             const random = (Math.floor(Math.random() * cart.length));
