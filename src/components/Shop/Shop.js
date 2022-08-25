@@ -29,6 +29,7 @@ const Shop = () => {
         else {
             let newCart = [...cart, books];
             setCart(newCart);
+            toast.success('Item added')
         }
     }
 
