@@ -8,10 +8,10 @@ const Cart = ({ item, removeItem }) => {
     return (
         <div className='cart-info'>
             <div className='item'>
-                <GiSpiderMask></GiSpiderMask>
+                <GiSpiderMask className='spider'></GiSpiderMask>
                 <h4 className='comic-name'>{name}</h4>
                 <p> ${price}</p>
-                <MdDeleteForever onClick={() => removeItem(item)}></MdDeleteForever>
+                <MdDeleteForever className='delete-btn' onClick={() => removeItem(item)}></MdDeleteForever>
             </div>
         </div>
     );
